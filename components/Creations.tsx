@@ -84,8 +84,16 @@ export default function Projets() {
           className="fixed inset-0 z-[300] bg-white flex items-center justify-center p-8"
           onClick={() => setLightbox(null)}
         >
+          {/* BOUTON FERMER */}
+          <button
+            onClick={() => setLightbox(null)}
+            className="absolute top-6 right-6 text-xs tracking-[0.2em] uppercase"
+          >
+            Fermer
+          </button>
+
           <div
-            className="relative h-[85vh] aspect-[210/297]"
+            className="relative h-[70vh] md:h-[85vh] aspect-[210/297]"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
