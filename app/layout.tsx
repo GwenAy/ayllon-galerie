@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "Ayllón Gwenaël — Design pragmatique, impact durable. UI/UX Designer et Web Designer freelance. Graphic Design, interfaces et refonte web.",
   keywords: ["Gwenaël Ayllón", "Ayllón Gwenaël", "Gwenael Ayllon", "Ayllon Gwenael", "Ayllon Galerie", "Galerie Ayllon", "designer UI UX", "designer web", "freelance", "portfolio"],
   authors: [{ name: "Ayllón Gwenaël" }],
+  verification: {
+    google: "l-m_01hTMHfVwesfwDCrH63_NIIgqKfo2WAPecWQr6g",
+  },
   openGraph: {
     title: "Ayllón Gwenaël — UI/UX Designer & Web Designer",
     description: "Design pragmatique, impact durable. UI/UX Designer et Web Designer freelance.",
