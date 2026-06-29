@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     siteName: "Ayllon Galerie",
     locale: "fr_FR",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 
