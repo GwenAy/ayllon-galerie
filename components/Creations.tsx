@@ -27,8 +27,17 @@ export default function Projets() {
   const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
 
   useEffect(() => {
-    document.body.style.overflow = lightbox ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    if (lightbox) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    };
   }, [lightbox]);
 
   return (
@@ -84,10 +93,10 @@ export default function Projets() {
           className="fixed inset-0 z-[300] bg-white flex items-center justify-center p-8"
           onClick={() => setLightbox(null)}
         >
-          {/* BOUTON FERMER */}
+          {/* BOUTON FERMER — mobile uniquement */}
           <button
             onClick={() => setLightbox(null)}
-            className="absolute top-6 right-6 text-xs tracking-[0.2em] uppercase"
+            className="absolute top-6 right-6 text-xs tracking-[0.2em] uppercase md:hidden"
           >
             Fermer
           </button>
