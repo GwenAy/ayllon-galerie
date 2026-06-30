@@ -92,6 +92,7 @@ export default function Projets() {
         <div
           className="fixed inset-0 z-[300] bg-white flex items-center justify-center p-8"
           onClick={() => setLightbox(null)}
+          style={{ touchAction: "none" }}
         >
           {/* BOUTON FERMER — mobile uniquement */}
           <button
