@@ -20,6 +20,7 @@ const series = [
       { id: 10, src: "/affiches/Sprint.webp", alt: "Divers 10" },
       { id: 11, src: "/affiches/Totem.webp", alt: "Divers 11" },
       { id: 12, src: "/affiches/B12.webp", alt: "Divers 12" },
+      { id: 13, src: "/affiches/Bryophyta.webp", alt: "Divers 13" },
     ],
   },
 ];
